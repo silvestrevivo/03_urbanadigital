@@ -1,0 +1,34 @@
+/*
+Error: Inconsistent indentation: 10 spaces were used for indentation, but the rest of the document was indented using 1 tab.
+        on line 33 of /Users/silvestrevivo/werk/2015/01_UrbanaDigital/03_urbanadigital/assets/sass/nav.sass
+
+28: 
+29: 
+30: 		.nav
+31: 			li
+32: 				a
+33:           .heading-font
+34:           	font-weight: 400
+35:           	letter-spacing: 1px
+36:           	color: white
+37:           	&:hover,
+38:           	&:focus
+
+Backtrace:
+/Users/silvestrevivo/werk/2015/01_UrbanaDigital/03_urbanadigital/assets/sass/nav.sass:33
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:483:in `block in tabulate'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:441:in `each'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:441:in `each_with_index'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:441:in `tabulate'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:406:in `_to_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:423:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/sass:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 10 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 33 of /Users/silvestrevivo/werk/2015/01_UrbanaDigital/03_urbanadigital/assets/sass/nav.sass\A \A 28: \A 29: \A 30: 		.nav\A 31: 			li\A 32: 				a\A 33:           .heading-font\A 34:           	font-weight: 400\A 35:           	letter-spacing: 1px\A 36:           	color: white\A 37:           	&:hover,\A 38:           	&:focus"; }

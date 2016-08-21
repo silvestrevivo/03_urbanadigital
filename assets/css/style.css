@@ -1,21 +1,61 @@
-.background-cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
-
-.serif-font {
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
+@import 'https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700';
+.serif-font, header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.script-font {
+.script-font, .navbar-default .navbar-brand {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
 
 .body-font {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.heading-font {
+.heading-font, header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
+
+.background-cover, header {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+header {
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  text-align: center;
+  color: white; }
+  header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px; }
+    header .intro-text .intro-lead-in {
+      font-style: italic;
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 25px; }
+    header .intro-text .intro-heading {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 25px; }
+
+@media(min-width:768px);
+header .intro-text {
+  padding-top: 300px;
+  padding-bottom: 200px; }
+  header .intro-text .intro-lead-in {
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px; }
+  header .intro-text .intro-heading {
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px; }
 
 body {
   overflow-x: hidden; }
@@ -61,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg-darkest-gray {
   background-color: #222; }
 
-.btn-primary .heading-font {
+.btn-primary .heading-font, .btn-primary header .intro-text .intro-heading, header .intro-text .btn-primary .intro-heading {
   font-weight: 700; }
 
 .btn-xl {
@@ -70,96 +110,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   padding: 20px 40px; }
 
-.navbar-default {
-  background-color: #222;
-  border-color: transparent; }
-  .navbar-default .navbar-brand {
-    color: #fed136; }
-    .navbar-default .navbar-brand .script-font:hover, .navbar-default .navbar-brand .script-font:focus, .navbar-default .navbar-brand .script-font:active, .navbar-default .navbar-brand .script-font.active {
-      color: #fec503; }
-  .navbar-default .navbar-collapse {
-    border-color: fade(white, 2%); }
-  .navbar-default .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136; }
-    .navbar-default .navbar-toggle .icon-bar {
-      background-color: white; }
-    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-      background-color: #fed136; }
-    .navbar-default .navbar-toggle .nav li a {
-      font-weight: 400;
-      letter-spacing: 1px;
-      color: white; }
-      .navbar-default .navbar-toggle .nav li a:hover, .navbar-default .navbar-toggle .nav li a:focus {
-        color: #fed136;
-        outline: none; }
-  .navbar-default .navbar-nav > .active > a {
-    border-radius: 0;
-    color: white;
-    background-color: #fed136; }
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-    color: white;
-    background-color: #fec503; }
-
-@media(min-width:768px) {
-  .navbar-default {
-    background-color: transparent;
-    padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-    border: none; }
-    .navbar-default .navbar-brand {
-      font-size: 2em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s; }
-
-  .navbar-nav > .active > a {
-    border-radius: 3px; }
-
-  .navbar-default.navbar-shrink {
-    background-color: #222;
-    padding: 10px 0; }
-
-  .navbar-brand {
-    font-size: 1.5em; } }
-header {
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: none;
-  background-attachment: scroll;
-  background-position: center center;
-  text-align: center;
-  color: white; }
-  header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px; }
-    header .intro-text .intro-lead-in {
-      font-style: italic;
-      font-size: 22px;
-      line-height: 22px;
-      margin-bottom: 25px; }
-    header .intro-text .intro-heading {
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 50px;
-      margin-bottom: 25px; }
-
-@media(min-width:768px) {
-  header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
-    header .intro-text .intro-lead-in {
-      font-style: italic;
-      font-size: 40px;
-      line-height: 40px;
-      margin-bottom: 25px; }
-    header .intro-text .intro-heading {
-      font-weight: 700;
-      font-size: 75px;
-      line-height: 75px;
-      margin-bottom: 50px; } }
 section {
   padding: 100px 0; }
   section h2.section-heading {
@@ -168,7 +118,7 @@ section {
     margin-bottom: 15px; }
   section h3.section-subheading {
     font-size: 16px; }
-  section .serif-font {
+  section .serif-font, section header .intro-text .intro-lead-in, header .intro-text section .intro-lead-in {
     text-transform: none;
     font-style: italic;
     font-weight: 400;
@@ -386,31 +336,20 @@ section#contact {
   section#contact .form-control:focus {
     border-color: #fed136;
     box-shadow: none; }
-  section#contact ::-webkit-input-placeholder .heading-font {
+  section#contact ::-webkit-input-placeholder .heading-font, section#contact ::-webkit-input-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-webkit-input-placeholder .intro-heading {
     font-weight: 700;
     color: #bbbbbb; }
-  section#contact ::-moz-placeholder .heading-font {
+  section#contact ::-moz-placeholder .heading-font, section#contact ::-moz-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-moz-placeholder .intro-heading {
     font-weight: 700;
     color: #bbbbbb; }
-  section#contact ::-moz-placeholder .heading-font {
+  section#contact ::-moz-placeholder .heading-font, section#contact ::-moz-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-moz-placeholder .intro-heading {
     font-weight: 700;
     color: #bbbbbb; }
-  section#contact ::-ms-input-placeholder .heading-font {
+  section#contact ::-ms-input-placeholder .heading-font, section#contact ::-ms-input-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-ms-input-placeholder .intro-heading {
     font-weight: 700;
     color: #bbbbbb; }
   section#contact .text-danger {
     color: #e74c3c; }
-
-footer {
-  padding: 25px 0;
-  text-align: center; }
-  footer span.copyright {
-    line-height: 40px;
-    text-transform: none; }
-  footer ul.quicklinks {
-    margin-bottom: 0;
-    line-height: 40px;
-    text-transform: none; }
 
 ul.social-buttons {
   margin-bottom: 0; }
@@ -450,7 +389,7 @@ ul.social-buttons {
     margin-bottom: 30px; }
   .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px; }
-    .portfolio-modal .modal-content p.item-intro .serif-font {
+    .portfolio-modal .modal-content p.item-intro .serif-font, .portfolio-modal .modal-content p.item-intro header .intro-text .intro-lead-in, header .intro-text .portfolio-modal .modal-content p.item-intro .intro-lead-in {
       font-style: italic;
       font-size: 16px; }
   .portfolio-modal .modal-content ul.list-inline {
@@ -509,3 +448,70 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #fed136; }
+
+.navbar-default {
+  background-color: #222;
+  border-color: transparent; }
+  .navbar-default .navbar-brand {
+    color: #fed136; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
+      color: #fec503; }
+  .navbar-default .navbar-collapse {
+    border-color: fade(white, 2%); }
+  .navbar-default .navbar-toggle {
+    background-color: #fed136;
+    border-color: #fed136; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: white; }
+      .navbar-default .navbar-toggle .icon-bar:hover, .navbar-default .navbar-toggle .icon-bar:focus {
+        background-color: #fed136; }
+
+.nav li a .heading-font, .nav li a header .intro-text .intro-heading, header .intro-text .nav li a .intro-heading {
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white; }
+  .nav li a .heading-font:hover, .nav li a header .intro-text .intro-heading:hover, header .intro-text .nav li a .intro-heading:hover, .nav li a .heading-font:focus, .nav li a header .intro-text .intro-heading:focus, header .intro-text .nav li a .intro-heading:focus {
+    color: #fed136;
+    outline: none; }
+.nav .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #fed136; }
+.nav .navbar-nav > .active > a:hover,
+.nav .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #fec503; }
+
+@media(min-width:768px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none; }
+    .navbar-default .navbar-brand {
+      font-size: 2em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+
+  .navbar-nav > .active > a {
+    border-radius: 3px; }
+
+  .navbar-default.navbar-shrink {
+    background-color: #222;
+    padding: 10px 0; }
+
+  .navbar-brand {
+    font-size: 1.5em; } }
+footer {
+  padding: 25px 0;
+  text-align: center; }
+  footer span.copyright {
+    line-height: 40px;
+    text-transform: none; }
+  footer ul.quicklinks {
+    margin-bottom: 0;
+    line-height: 40px;
+    text-transform: none; }
