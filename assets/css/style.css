@@ -2,18 +2,67 @@
 @import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
 @import 'https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700';
+.bg-light-gray {
+  background-color: #f7f7f7; }
+
+.bg-darkest-gray {
+  background-color: #222; }
+
 .serif-font, header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.script-font, .navbar-default .navbar-brand {
+.script-font {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
 
-.body-font {
+.body-font, body {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.heading-font, header .intro-text .intro-heading {
+.heading-font, h1, h2, h3, h4, h5, h6, .btn-primary, .btn-xl, header .intro-text .intro-heading, .navbar-default .navbar-brand, .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
+
+.text-muted {
+  color: #777; }
+
+.text-primary {
+  color: orange; }
+
+p {
+  font-size: 14px;
+  line-height: 1.75; }
+
+p.large {
+  font-size: 16px; }
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none; }
+
+a {
+  color: orange; }
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #cc8400; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+.btn-primary {
+  @inlude .button-variant(white; $brand-primary; $brand-primary);
+  font-weight: 700; }
+
+.btn-xl {
+  @inlude .button-variant(white; $brand-primary; $brand-primary);
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px; }
 
 .background-cover, header {
   -webkit-background-size: cover;
@@ -58,57 +107,11 @@ header .intro-text {
     margin-bottom: 50px; }
 
 body {
-  overflow-x: hidden; }
-
-.text-muted {
-  color: #777; }
-
-.text-primary {
-  color: #fed136; }
-
-p {
-  font-size: 14px;
-  line-height: 1.75; }
-
-p.large {
-  font-size: 16px; }
-
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-  outline: none; }
-
-a {
-  color: #fed136; }
-
-a:hover,
-a:focus,
-a:active,
-a.active {
-  color: #fec503; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; }
+  overflow-x: hidden;
+  webkit-tap-highlight-color: orange; }
 
 .img-centered {
   margin: 0 auto; }
-
-.bg-light-gray {
-  background-color: #f7f7f7; }
-
-.bg-darkest-gray {
-  background-color: #222; }
-
-.btn-primary .heading-font, .btn-primary header .intro-text .intro-heading, header .intro-text .btn-primary .intro-heading {
-  font-weight: 700; }
-
-.btn-xl {
-  font-weight: 700;
-  border-radius: 3px;
-  font-size: 18px;
-  padding: 20px 40px; }
 
 section {
   padding: 100px 0; }
@@ -140,7 +143,7 @@ section {
     max-width: 400px;
     margin: 0 auto; }
     #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-      background: fade(#fed136, 90%);
+      background: fade(orange, 90%);
       position: absolute;
       width: 100%;
       height: 100%;
@@ -228,7 +231,7 @@ section {
       height: 80px;
       position: absolute;
       z-index: 100;
-      background-color: #fed136;
+      background-color: orange;
       color: white;
       border-radius: 100%;
       border: 7px solid #f1f1f1;
@@ -301,6 +304,19 @@ section {
         line-height: 26px; }
         .timeline .timeline-panel .timeline-image h4.timeline-inverted > .timeline-panel {
           padding: 0 20px 20px; } }
+@media(min-width:1200px) {
+  .timeline > li {
+    min-height: 170px; }
+  .timeline .timeline-panel {
+    padding: 0 20px 20px 100px; }
+    .timeline .timeline-panel .timeline-image {
+      width: 170px;
+      height: 170px;
+      margin-left: -85px; }
+      .timeline .timeline-panel .timeline-image h4 {
+        margin-top: 40px; }
+      .timeline .timeline-panel .timeline-image.timeline-inverted > .timeline-panel {
+        padding: 0 100px 20px 20px; } }
 .team-member {
   text-align: center;
   margin-bottom: 50px; }
@@ -334,18 +350,18 @@ section#contact {
     section#contact .form-group textarea.form-control {
       height: 236px; }
   section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: orange;
     box-shadow: none; }
-  section#contact ::-webkit-input-placeholder .heading-font, section#contact ::-webkit-input-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-webkit-input-placeholder .intro-heading {
+  section#contact ::-webkit-input-placeholder .heading-font, section#contact ::-webkit-input-placeholder h1, section#contact ::-webkit-input-placeholder h2, section#contact ::-webkit-input-placeholder h3, section#contact ::-webkit-input-placeholder h4, section#contact ::-webkit-input-placeholder h5, section#contact ::-webkit-input-placeholder h6, section#contact ::-webkit-input-placeholder .btn-primary, section#contact ::-webkit-input-placeholder .btn-xl, section#contact ::-webkit-input-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-webkit-input-placeholder .intro-heading, section#contact ::-webkit-input-placeholder .navbar-default .navbar-brand, .navbar-default section#contact ::-webkit-input-placeholder .navbar-brand, section#contact ::-webkit-input-placeholder .nav li a, .nav li section#contact ::-webkit-input-placeholder a {
     font-weight: 700;
     color: #bbbbbb; }
-  section#contact ::-moz-placeholder .heading-font, section#contact ::-moz-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-moz-placeholder .intro-heading {
+  section#contact ::-moz-placeholder .heading-font, section#contact ::-moz-placeholder h1, section#contact ::-moz-placeholder h2, section#contact ::-moz-placeholder h3, section#contact ::-moz-placeholder h4, section#contact ::-moz-placeholder h5, section#contact ::-moz-placeholder h6, section#contact ::-moz-placeholder .btn-primary, section#contact ::-moz-placeholder .btn-xl, section#contact ::-moz-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-moz-placeholder .intro-heading, section#contact ::-moz-placeholder .navbar-default .navbar-brand, .navbar-default section#contact ::-moz-placeholder .navbar-brand, section#contact ::-moz-placeholder .nav li a, .nav li section#contact ::-moz-placeholder a {
     font-weight: 700;
     color: #bbbbbb; }
-  section#contact ::-moz-placeholder .heading-font, section#contact ::-moz-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-moz-placeholder .intro-heading {
+  section#contact ::-moz-placeholder .heading-font, section#contact ::-moz-placeholder h1, section#contact ::-moz-placeholder h2, section#contact ::-moz-placeholder h3, section#contact ::-moz-placeholder h4, section#contact ::-moz-placeholder h5, section#contact ::-moz-placeholder h6, section#contact ::-moz-placeholder .btn-primary, section#contact ::-moz-placeholder .btn-xl, section#contact ::-moz-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-moz-placeholder .intro-heading, section#contact ::-moz-placeholder .navbar-default .navbar-brand, .navbar-default section#contact ::-moz-placeholder .navbar-brand, section#contact ::-moz-placeholder .nav li a, .nav li section#contact ::-moz-placeholder a {
     font-weight: 700;
     color: #bbbbbb; }
-  section#contact ::-ms-input-placeholder .heading-font, section#contact ::-ms-input-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-ms-input-placeholder .intro-heading {
+  section#contact ::-ms-input-placeholder .heading-font, section#contact ::-ms-input-placeholder h1, section#contact ::-ms-input-placeholder h2, section#contact ::-ms-input-placeholder h3, section#contact ::-ms-input-placeholder h4, section#contact ::-ms-input-placeholder h5, section#contact ::-ms-input-placeholder h6, section#contact ::-ms-input-placeholder .btn-primary, section#contact ::-ms-input-placeholder .btn-xl, section#contact ::-ms-input-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-ms-input-placeholder .intro-heading, section#contact ::-ms-input-placeholder .navbar-default .navbar-brand, .navbar-default section#contact ::-ms-input-placeholder .navbar-brand, section#contact ::-ms-input-placeholder .nav li a, .nav li section#contact ::-ms-input-placeholder a {
     font-weight: 700;
     color: #bbbbbb; }
   section#contact .text-danger {
@@ -366,6 +382,8 @@ ul.social-buttons {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
+    ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+      background-color: orange; }
 
 .btn:focus,
 .btn:active,
@@ -434,11 +452,11 @@ ul.social-buttons {
 
 ::-moz-selection {
   text-shadow: none;
-  background: #fed136; }
+  background: orange; }
 
 ::selection {
   text-shadow: none;
-  background: #fed136; }
+  background: orange; }
 
 img::selection {
   background: transparent; }
@@ -446,41 +464,38 @@ img::selection {
 img::-moz-selection {
   background: transparent; }
 
-body {
-  webkit-tap-highlight-color: #fed136; }
-
 .navbar-default {
   background-color: #222;
   border-color: transparent; }
   .navbar-default .navbar-brand {
-    color: #fed136; }
+    color: #777; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
-      color: #fec503; }
+      color: #cc8400; }
   .navbar-default .navbar-collapse {
     border-color: fade(white, 2%); }
   .navbar-default .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136; }
+    background-color: orange;
+    border-color: orange; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: white; }
       .navbar-default .navbar-toggle .icon-bar:hover, .navbar-default .navbar-toggle .icon-bar:focus {
-        background-color: #fed136; }
+        background-color: orange; }
 
-.nav li a .heading-font, .nav li a header .intro-text .intro-heading, header .intro-text .nav li a .intro-heading {
+.nav li a {
   font-weight: 400;
   letter-spacing: 1px;
   color: white; }
-  .nav li a .heading-font:hover, .nav li a header .intro-text .intro-heading:hover, header .intro-text .nav li a .intro-heading:hover, .nav li a .heading-font:focus, .nav li a header .intro-text .intro-heading:focus, header .intro-text .nav li a .intro-heading:focus {
-    color: #fed136;
+  .nav li a:hover, .nav li a:focus {
+    color: orange;
     outline: none; }
 .nav .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #fed136; }
+  background-color: orange; }
 .nav .navbar-nav > .active > a:hover,
 .nav .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503; }
+  background-color: #cc8400; }
 
 @media(min-width:768px) {
   .navbar-default {

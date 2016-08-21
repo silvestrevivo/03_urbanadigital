@@ -17,43 +17,95 @@
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
   text-transform: uppercase
 
+.text-muted
+  color: $gray
 
 
-// .button-variant($color; $background; $border)
-// 	color: $color
-// 	background-color: $background
-// 	border-color: $border
-
-	&:hover,
-	&:focus,
-	&:active,
-	&.active,
-	.open .dropdown-toggle&
-		color: $color
-		background-color: darken($background, 10%)
-		border-color: darken($border, 12%)
-
-	&:active,
-	&.active,
-	.open .dropdown-toggle&
-		background-image: none
-
-	&.disabled,
-	&[disabled],
-	fieldset[disabled] &
-		&,
-		&:hover,
-		&:focus,
-		&:active,
-		&.active
-			background-color: $background
-			border-color: $border
+.text-primary
+  color: $brand-primary
 
 
+p
+  font-size: 14px
+  line-height: 1.75
 
-	.badge
-		color: $background
-		background-color: $color
+
+p.large
+  font-size: 16px
+
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active
+  outline: none
+
+
+a
+  color: $brand-primary
+
+
+a:hover,
+a:focus,
+a:active,
+a.active
+  color: darken($brand-primary, 10%)
+
+
+h1, h2, h3, h4, h5, h6
+  @extend .heading-font
+  font-weight: 700
+
+
+
+// Restyled Primary Buttons
+
+  .button-variant($color; $background; $border)
+    color: $color
+    background-color: $background
+    border-color: $border
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    .open .dropdown-toggle&
+      color: $color
+      background-color: darken($background, 10%)
+      border-color: darken($border, 12%)
+      &:active,
+      &.active,
+      .open .dropdown-toggle&
+        background-image: none
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] &
+          &,
+          &:hover,
+          &:focus,
+          &:active,
+          &.active
+            background-color: $background
+            border-color: $border
+    .badge
+      color: $background
+      background-color: $color
+
+
+.btn-primary
+  @inlude .button-variant(white; $brand-primary; $brand-primary)
+  @extend .heading-font
+  font-weight: 700
+
+
+.btn-xl
+  @inlude .button-variant(white; $brand-primary; $brand-primary)
+  @extend .heading-font
+  font-weight: 700
+  border-radius: 3px
+  font-size: 18px
+  padding: 20px 40px
+
 
 
 

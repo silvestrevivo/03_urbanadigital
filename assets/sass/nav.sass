@@ -3,8 +3,8 @@
   background-color: $gray-darkest
   border-color: transparent
   .navbar-brand
-    color: $brand-primary
-    @extend .script-font
+    color: $gray
+    @extend .heading-font
     &:hover,
     &:focus,
     &:active,
@@ -24,14 +24,14 @@
 .nav
   li
     a
-      .heading-font
-        font-weight: 400
-        letter-spacing: 1px
-        color: white
-        &:hover,
-        &:focus
-          color: $brand-primary
-          outline: none
+      @extend .heading-font
+      font-weight: 400
+      letter-spacing: 1px
+      color: white
+      &:hover,
+      &:focus
+        color: $brand-primary
+        outline: none
   .navbar-nav>.active>a
     border-radius: 0
     color: white

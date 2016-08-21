@@ -1,89 +1,12 @@
 body
 	overflow-x: hidden
-	.body-font
-
-
-.text-muted
-	color: $gray
-
-
-.text-primary
-	color: $brand-primary
-
-
-p
-	font-size: 14px
-	line-height: 1.75
-
-
-p.large
-	font-size: 16px
-
-
-a,
-a:hover,
-a:focus,
-a:active,
-a.active
-	outline: none
-
-
-a
-	color: $brand-primary
-
-
-a:hover,
-a:focus,
-a:active,
-a.active
-	color: darken($brand-primary, 10%)
-
-
-h1, h2, h3, h4, h5, h6
-	.heading-font
-	font-weight: 700
-
+	webkit-tap-highlight-color: $brand-primary
+	@extend .body-font
 
 .img-centered
 	margin: 0 auto
 
-
-.bg-light-gray
-	background-color: $gray-lighter
-
-
-.bg-darkest-gray
-	background-color: $gray-darkest
-
-
-// Restyled Primary Buttons
-
-.btn-primary
-	//.button-variant(white; $brand-primary; $brand-primary)
-	.heading-font
-		font-weight: 700
-
-
-.btn-xl
-	//.button-variant(white; $brand-primary; $brand-primary)
-	.heading-font
-	font-weight: 700
-	border-radius: 3px
-	font-size: 18px
-	padding: 20px 40px
-
-
-
-
-
-
-
-
-
-
-
 // Global Section Styles
-
 section
 	padding: 100px 0
 	h2.section-heading
@@ -99,8 +22,6 @@ section
 		font-weight: 400
 		margin-bottom: 75px
 
-
-
 @media(min-width:768px)
 	section
 		padding: 150px 0
@@ -108,14 +29,12 @@ section
 
 
 // Services Section
-
 .service-heading
 	margin: 15px 0
 	text-transform: none
 
 
 // Portfolio Section
-
 #portfolio
 	.portfolio-item
 		margin: 0 0 15px
@@ -171,13 +90,8 @@ section
 				font-style: italic
 				font-size: 16px
 				margin: 0
-
-
-
 	*
 		z-index: 2
-
-
 
 @media(min-width:767px)
 	#portfolio
@@ -185,10 +99,7 @@ section
 		margin: 0 0 30px
 
 
-
-
 // Timeline
-
 .timeline
 	list-style: none
 	padding: 0
@@ -348,23 +259,20 @@ section
 
 
 
-// @media(min-width:1200px)
-// 	.timeline
-// 		> li
-// 		    min-height: 170px
-// 		.timeline-panel
-// 		        padding: 0 20px 20px 100px
-//
-// 		    .timeline-image
-// 		        width: 170px
-// 		        height: 170px
-// 		        margin-left: -85px
-// 		        h4
-// 		        	margin-top: 40px
-//
-//
-// 		    &.timeline-inverted > .timeline-panel
-// 		        padding: 0 100px 20px 20px
+@media(min-width:1200px)
+	.timeline
+		> li
+			min-height: 170px
+		.timeline-panel
+			padding: 0 20px 20px 100px
+			.timeline-image
+				width: 170px
+				height: 170px
+				margin-left: -85px
+				h4
+					margin-top: 40px
+				&.timeline-inverted > .timeline-panel
+					padding: 0 100px 20px 20px
 
 
 
@@ -470,10 +378,10 @@ ul.social-buttons
 			-webkit-transition: all 0.3s
 			-moz-transition: all 0.3s
 			transition: all 0.3s
-			// &:hover,
-			// &:focus,
-			// &:active
-			// background-color: $brand-primary
+			&:hover,
+			&:focus,
+			&:active
+				background-color: $brand-primary
 
 
 
@@ -576,7 +484,3 @@ img::selection
 
 img::-moz-selection
 	background: transparent
-
-
-body
-	webkit-tap-highlight-color: $brand-primary
