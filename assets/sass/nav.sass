@@ -3,13 +3,12 @@
   background-color: $gray-darkest
   border-color: transparent
   .navbar-brand
-    color: $gray
     @extend .heading-font
     &:hover,
     &:focus,
     &:active,
     &.active
-      color: darken($brand-primary, 10%)
+      color: darken($brand-primary, 10%) !important
   .navbar-collapse
     border-color: fade(white, 2%)
   .navbar-toggle
@@ -20,17 +19,16 @@
       &:hover,
       &:focus
         background-color: $brand-primary
-
 .nav
   li
     a
       @extend .heading-font
       font-weight: 400
       letter-spacing: 1px
-      color: white
+      +transition(all .2s ease)
       &:hover,
       &:focus
-        color: $brand-primary
+        color: $brand-primary !important
         outline: none
   .navbar-nav>.active>a
     border-radius: 0
@@ -45,22 +43,16 @@
   .navbar-default
     background-color: transparent
     padding: 25px 0
-    -webkit-transition: padding 0.3s
-    -moz-transition: padding 0.3s
-    transition: padding 0.3s
+    +transition(padding .3s ease)
     border: none
     .navbar-brand
       font-size: 2em
-      -webkit-transition: all 0.3s
-      -moz-transition: all 0.3s
-      transition: all 0.3s
-
+      +transition(all .3s ease)
   .navbar-nav>.active>a
     border-radius: 3px
-
-
-  .navbar-default.navbar-shrink
-    background-color: $gray-darkest
-    padding: 10px 0
+  .navbar-default
+    &.navbar-shrink
+      background-color: rgba($gray-darkest, 0.9)
+      padding: 10px 0
   .navbar-brand
     font-size: 1.5em

@@ -18,3 +18,11 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+jQuery(window).scroll(function() {
+    if (jQuery(".navbar").offset().top > 100) {
+        jQuery(".navbar-fixed-top").addClass("navbar-shrink");
+    } else {
+        jQuery(".navbar-fixed-top").removeClass("navbar-shrink");
+    }
+});

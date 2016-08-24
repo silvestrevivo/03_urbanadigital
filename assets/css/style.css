@@ -2,6 +2,30 @@
 @import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
 @import 'https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700';
+.text-white {
+  color: #FFFFFF !important; }
+
+.text-gray-lighter {
+  color: #f7f7f7 !important; }
+
+.text-gray {
+  color: #777 !important; }
+
+.text-gray-darkest {
+  color: #222 !important; }
+
+.white {
+  background-color: #FFFFFF !important; }
+
+.gray-lighter {
+  background-color: #f7f7f7 !important; }
+
+.gray {
+  background-color: #777 !important; }
+
+.gray-darkest {
+  background-color: #222 !important; }
+
 .bg-light-gray {
   background-color: #f7f7f7; }
 
@@ -25,7 +49,7 @@
   color: #777; }
 
 .text-primary {
-  color: orange; }
+  color: #f46c26; }
 
 p {
   font-size: 14px;
@@ -42,13 +66,13 @@ a.active {
   outline: none; }
 
 a {
-  color: orange; }
+  color: #f46c26; }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #cc8400; }
+  color: #dc520b; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700; }
@@ -71,15 +95,10 @@ h1, h2, h3, h4, h5, h6 {
   -o-background-size: cover; }
 
 header {
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: none;
-  background-attachment: scroll;
-  background-position: center center;
-  text-align: center;
-  color: white; }
+  background: url("../img/header-bg.jpg") no-repeat center center;
+  height: 100%; }
   header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px; }
+    padding-top: 100px; }
     header .intro-text .intro-lead-in {
       font-style: italic;
       font-size: 22px;
@@ -92,23 +111,27 @@ header {
       margin-bottom: 25px; }
 
 @media(min-width:768px);
-header .intro-text {
-  padding-top: 300px;
-  padding-bottom: 200px; }
-  header .intro-text .intro-lead-in {
-    font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 25px; }
-  header .intro-text .intro-heading {
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 75px;
-    margin-bottom: 50px; }
+header {
+  height: 100%; }
+  header .intro-text {
+    padding-top: 300px; }
+    header .intro-text .intro-lead-in {
+      font-style: italic;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px; }
+    header .intro-text .intro-heading {
+      font-weight: 700;
+      font-size: 75px;
+      line-height: 75px;
+      margin-bottom: 50px; }
 
 body {
   overflow-x: hidden;
-  webkit-tap-highlight-color: orange; }
+  webkit-tap-highlight-color: #f46c26; }
+
+html, body {
+  height: 100%; }
 
 .img-centered {
   margin: 0 auto; }
@@ -143,7 +166,7 @@ section {
     max-width: 400px;
     margin: 0 auto; }
     #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-      background: fade(orange, 90%);
+      background: fade(#f46c26, 90%);
       position: absolute;
       width: 100%;
       height: 100%;
@@ -231,7 +254,7 @@ section {
       height: 80px;
       position: absolute;
       z-index: 100;
-      background-color: orange;
+      background-color: #f46c26;
       color: white;
       border-radius: 100%;
       border: 7px solid #f1f1f1;
@@ -350,7 +373,7 @@ section#contact {
     section#contact .form-group textarea.form-control {
       height: 236px; }
   section#contact .form-control:focus {
-    border-color: orange;
+    border-color: #f46c26;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder .heading-font, section#contact ::-webkit-input-placeholder h1, section#contact ::-webkit-input-placeholder h2, section#contact ::-webkit-input-placeholder h3, section#contact ::-webkit-input-placeholder h4, section#contact ::-webkit-input-placeholder h5, section#contact ::-webkit-input-placeholder h6, section#contact ::-webkit-input-placeholder .btn-primary, section#contact ::-webkit-input-placeholder .btn-xl, section#contact ::-webkit-input-placeholder header .intro-text .intro-heading, header .intro-text section#contact ::-webkit-input-placeholder .intro-heading, section#contact ::-webkit-input-placeholder .navbar-default .navbar-brand, .navbar-default section#contact ::-webkit-input-placeholder .navbar-brand, section#contact ::-webkit-input-placeholder .nav li a, .nav li section#contact ::-webkit-input-placeholder a {
     font-weight: 700;
@@ -383,7 +406,7 @@ ul.social-buttons {
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
     ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
-      background-color: orange; }
+      background-color: #f46c26; }
 
 .btn:focus,
 .btn:active,
@@ -452,11 +475,11 @@ ul.social-buttons {
 
 ::-moz-selection {
   text-shadow: none;
-  background: orange; }
+  background: #f46c26; }
 
 ::selection {
   text-shadow: none;
-  background: orange; }
+  background: #f46c26; }
 
 img::selection {
   background: transparent; }
@@ -467,55 +490,61 @@ img::-moz-selection {
 .navbar-default {
   background-color: #222;
   border-color: transparent; }
-  .navbar-default .navbar-brand {
-    color: #777; }
-    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
-      color: #cc8400; }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
+    color: #dc520b !important; }
   .navbar-default .navbar-collapse {
     border-color: fade(white, 2%); }
   .navbar-default .navbar-toggle {
-    background-color: orange;
-    border-color: orange; }
+    background-color: #f46c26;
+    border-color: #f46c26; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: white; }
       .navbar-default .navbar-toggle .icon-bar:hover, .navbar-default .navbar-toggle .icon-bar:focus {
-        background-color: orange; }
+        background-color: #f46c26; }
 
 .nav li a {
   font-weight: 400;
   letter-spacing: 1px;
-  color: white; }
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
   .nav li a:hover, .nav li a:focus {
-    color: orange;
+    color: #f46c26 !important;
     outline: none; }
 .nav .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: orange; }
+  background-color: #f46c26; }
 .nav .navbar-nav > .active > a:hover,
 .nav .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #cc8400; }
+  background-color: #dc520b; }
 
 @media(min-width:768px) {
   .navbar-default {
     background-color: transparent;
     padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
+    -webkit-transition: padding 0.3s ease;
+    -moz-transition: padding 0.3s ease;
+    -ms-transition: padding 0.3s ease;
+    -o-transition: padding 0.3s ease;
+    transition: padding 0.3s ease;
     border: none; }
     .navbar-default .navbar-brand {
       font-size: 2em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s; }
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 
   .navbar-nav > .active > a {
     border-radius: 3px; }
 
   .navbar-default.navbar-shrink {
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.9);
     padding: 10px 0; }
 
   .navbar-brand {
