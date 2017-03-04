@@ -1,0 +1,60 @@
+// =============================================================================
+// BASE.SASS
+// =============================================================================
+// GENERAL
+html, body
+	height: 100%
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: subpixel-antialiased
+  font-family: 'Ubuntu', sans-serif
+
+body
+  background-color: #5c818b
+  padding: 10% 2%
+  position: relative
+
+ul
+	padding: 0
+	font-size: 0
+
+i
+	vertical-align: middle
+
+img
+	max-width: 100%
+	height: auto
+	display: block
+
+a, a:active, a:focus, a:hover, a:visited, a:link,
+	outline: 0
+	text-decoration: none
+
+
+//CUSTOM BOOTSTRAP 5 COLUMNS
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15
+	position: relative
+	min-height: 1px
+	padding-right: 15px
+	padding-left: 15px
+
+.col-xs-15
+	width: 20%
+	float: left
+
+@media (min-width: 768px)
+	.col-sm-15
+		width: 20%
+		float: left
+
+@media (min-width: 992px)
+	.col-md-15
+		width: 20%
+		float: left
+
+@media (min-width: 1200px)
+	.col-lg-15
+		width: 20%
+		float: left

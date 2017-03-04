@@ -1,3 +1,2 @@
 # 03_urbanadigital
-Urbana Digital WebSite - Office Architecture Amsterdam
-www.urbanadigital.eu
+Urbana Digital WebSite - Office Architecture in Amsterdam www.urbanadigital.eu

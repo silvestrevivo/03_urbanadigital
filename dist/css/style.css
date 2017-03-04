@@ -1,0 +1,115 @@
+h1,h2,h3,h4,h5,h6{line-height:1.1}
+body,html{height:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:subpixel-antialiased;-webkit-font-smoothing-font-family:'Ubuntu',sans-serif}
+body{background-color:#5c818b;padding:10% 2%;position:relative}
+ul{padding:0;font-size:0}
+i{vertical-align:middle}
+img{max-width:100%;height:auto;display:block}
+a,a:active,a:focus,a:hover,a:link,a:visited{outline:0;text-decoration:none}
+.col-lg-15,.col-md-15,.col-sm-15,.col-xs-15{position:relative;min-height:1px;padding-right:15px;padding-left:15px}
+.col-xs-15{width:20%;float:left}
+@media (min-width:768px){.col-sm-15{width:20%;float:left}
+}
+@media (min-width:992px){.col-md-15{width:20%;float:left}
+}
+@media (min-width:1200px){.col-lg-15{width:20%;float:left}
+}
+.blue{background-color:#005C89}
+.lblue{background-color:#6EBDEA}
+.green{background-color:#4FAF47}
+.lgreen{background-color:#8EE487}
+.orange{background-color:#FF8C3D}
+.lorange{background-color:#FFBF93}
+.grey{background-color:#6d6d6d}
+.lgrey{background-color:#c6c6c6}
+.xlgrey{background-color:#eee}
+.black{background-color:#444}
+.facebook{background-color:#3b5998}
+.twitter{background-color:#00aced}
+.white{background-color:#fff}
+.youtube{background-color:#b00}
+.instagram{background-color:#517fa4}
+.linkedin{background-color:#0077b5}
+.whatsapp{background-color:#43d854}
+.mail{background-color:#6EBDEA}
+.blue-text{color:#005C89}
+.lblue-text{color:#6EBDEA}
+.green-text{color:#4FAF47}
+.lgreen-text{color:#8EE487}
+.orange-text{color:#FF8C3D}
+.lorange{color:#FFBF93}
+.white-text{color:#fff}
+.grey-text{color:#6d6d6d}
+.lgrey-text{color:#c6c6c6}
+.xlgrey-text{color:#eee}
+.black-text{color:#444}
+p{font-size:12px;line-height:1.4}
+@media screen and (min-width:480px){p{font-size:16px;line-height:1.4}
+}
+@media screen and (min-width:768px){p{font-size:14px;line-height:1.4}
+}
+@media screen and (min-width:992px){p{font-size:16px;line-height:1.4}
+}
+@media screen and (min-width:1200px){p{font-size:18px;line-height:1.4}
+}
+h1{font-size:30px}
+@media screen and (min-width:480px){h1{font-size:34px;line-height:1.1}
+}
+@media screen and (min-width:768px){h1{font-size:32px;line-height:1.1}
+}
+@media screen and (min-width:992px){h1{font-size:34px;line-height:1.1}
+}
+@media screen and (min-width:1200px){h1{font-size:36px;line-height:1.1}
+}
+h2{font-size:26px}
+@media screen and (min-width:480px){h2{font-size:28px;line-height:1.1}
+}
+@media screen and (min-width:768px){h2{font-size:26px;line-height:1.1}
+}
+@media screen and (min-width:992px){h2{font-size:28px;line-height:1.1}
+}
+@media screen and (min-width:1200px){h2{font-size:30px;line-height:1.1}
+}
+h3{font-size:20px}
+@media screen and (min-width:480px){h3{font-size:22px;line-height:1.1}
+}
+@media screen and (min-width:768px){h3{font-size:20px;line-height:1.1}
+}
+@media screen and (min-width:992px){h3{font-size:22px;line-height:1.1}
+}
+@media screen and (min-width:1200px){h3{font-size:24px;line-height:1.1}
+}
+h4{font-size:16px}
+@media screen and (min-width:480px){h4{font-size:16px;line-height:1.1}
+}
+@media screen and (min-width:768px){h4{font-size:14px;line-height:1.1}
+}
+@media screen and (min-width:992px){h4{font-size:16px;line-height:1.1}
+}
+@media screen and (min-width:1200px){h4{font-size:18px;line-height:1.1}
+}
+h5{font-size:12px}
+@media screen and (min-width:480px){h5{font-size:13px;line-height:1.1}
+}
+@media screen and (min-width:768px){h5{font-size:12px;line-height:1.1}
+}
+@media screen and (min-width:992px){h5{font-size:13px;line-height:1.1}
+}
+@media screen and (min-width:1200px){h5{font-size:14px;line-height:1.1}
+}
+h6{font-size:10px}
+@media screen and (min-width:480px){h6{font-size:11px;line-height:1.1}
+}
+@media screen and (min-width:768px){h6{font-size:20px;line-height:1.1}
+}
+@media screen and (min-width:992px){h6{font-size:11px;line-height:1.1}
+}
+@media screen and (min-width:1200px){h6{font-size:12px;line-height:1.1}
+}
+.content-header{background-color:#cee3e3;border-radius:8px;padding:5%;-webkit-box-shadow:0 0 15px #424242;box-shadow:0 0 15px #424242}
+.content-header h1{color:#5c818b;font-weight:700}
+.content-header ul{width:50%;margin:0 auto}
+.content-header ul li{width:30%}
+.content-header ul li:nth-child(1) img{width:100%}
+.content-header ul li:nth-child(2) p{font-size:80px;font-weight:500;color:#5c818b;position:relative;top:20px}
+.content-header ul li:nth-child(3) img{width:60%}
+footer{color:#eed28e;position:absolute;bottom:10px;width:100%;left:0}
