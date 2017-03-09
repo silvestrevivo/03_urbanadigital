@@ -6,12 +6,6 @@ html, body
 	height: 100%
 	text-rendering: optimizeLegibility
 	-webkit-font-smoothing: subpixel-antialiased
-  font-family: 'Ubuntu', sans-serif
-
-body
-  background-color: #5c818b
-  padding: 10% 2%
-  position: relative
 
 ul
 	padding: 0
@@ -44,17 +38,20 @@ a, a:active, a:focus, a:hover, a:visited, a:link,
 	width: 20%
 	float: left
 
-@media (min-width: 768px)
+//@media (min-width: 768px)
++bp-sm
 	.col-sm-15
 		width: 20%
 		float: left
 
-@media (min-width: 992px)
+//@media (min-width: 992px)
++bp-md
 	.col-md-15
 		width: 20%
 		float: left
 
-@media (min-width: 1200px)
+//@media (min-width: 1200px)
++bp-lg
 	.col-lg-15
 		width: 20%
 		float: left

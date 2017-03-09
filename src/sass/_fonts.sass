@@ -1,14 +1,22 @@
 // =============================================================================
 // FONTS.SASS
 // =============================================================================
+// Type Letters extends
+$serif-font: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif
+.serif-font
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif
 
-//@include font-face(fontnaam, fonts/fontnaam, null, null, otf)
-//@include font-face(fontnaam, fonts/fontnaam, null, null, woff)
+$script-font: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
+.script-font
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
 
-//@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,700)
+$body-font: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
+.body-font
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
 
-// *
-// 	font-family: 'Work Sans', sans-serif
+$heading-font: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
+.heading-font
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
 
 
 // bootstrap breakpoints - defined in mixins
@@ -27,12 +35,14 @@ $h5-font-sizes: ( null: (12px, 1.1), small: (13px, 1.1), medium: (12px, 1.1), la
 
 $h6-font-sizes: ( null: (10px, 1.1), small: (11px, 1.1), medium: (20px, 1.1), large:(11px, 1.1), xlarge: (12px, 1.1) )
 
-$p-font-sizes: ( null: (12px, 1.4), small: (16px, 1.4), medium: (14px, 1.4), large:(16px, 1.4), xlarge: (18px, 1.4) )
+$p-font-sizes: ( null: (13px, 1.6), small: (14px, 1.75), medium: (13px, 1.6), large:(14px, 1.75), xlarge: (14px, 1.75) )
 
 
-font styles
+//font styles
 p
 	+font-size($p-font-sizes)
+p.large
+  font-size: 16px
 
 h1
 	+font-size($h1-font-sizes)
@@ -51,6 +61,41 @@ h5
 
 h6
 	+font-size($h6-font-sizes)
+
+h1, h2, h3, h4, h5, h6
+	@extend .heading-font
+	font-weight: 700
+
+a
+	color: $theme-primary
+
+a:hover,
+a:focus,
+a:active,
+a.active
+	color: darken($theme-primary, 10%)
+
+
+.img-centered
+  margin: 0 auto
+.bg-light-gray
+  background-color: $gray-lighter
+.bg-darkest-gray
+  background-color: $gray-darker
+
+// Restyled Primary Buttons
+.btn-primary
+  button-variant(white, $theme-primary, $theme-primary)
+  @extend .heading-font
+  font-weight: 700
+.btn-xl
+  button-variant(white, $theme-primary, $theme-primary)
+  @extend .heading-font
+  font-weight: 700
+  border-radius: 3px
+  font-size: 18px
+  padding: 20px 40px
+
 
 
 //small devices => 480px

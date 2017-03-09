@@ -1,24 +1,27 @@
 // =============================================================================
 // COLORS.SASS
 // =============================================================================
-//Bluetint
-$blue: #005C89
-$lblue: #6EBDEA
+//$theme-primary: #fed136
+//yellow
+$theme-primary: #F46C26
+//orange
+$theme-danger: #e74c3c
+//red
 
-//Greentint
-$green: #4FAF47
-$lgreen: #8EE487
-
-//Orangetint
-$orange: #FF8C3D
-$lorange: #FFBF93
+$gray-base: #000 !default
+$gray-darker: lighten($gray-base, 13.5%) !default
+//#222
+$gray-dark: lighten($gray-base, 20%) !default
+// #333
+$gray: lighten($gray-base, 33.5%) !default
+//#555
+$gray-light: lighten($gray-base, 46.7%) !default
+//#777
+$gray-lighter: lighten($gray-base, 93.5%) !default
+//#eee
 
 //Greytint
 $black: #444444
-$grey: #6d6d6d
-$lgrey: #c6c6c6
-$xlgrey: #eeeeee
-$xxlgrey: #eeeeee
 $white: white
 
 $text-shadow : 0px 0px 5px rgba($black, 0.4)
@@ -33,69 +36,42 @@ $linkedin: #0077b5
 
 
 // background colors
-.blue
-	background-color: $blue
-.lblue
-	background-color: $lblue
-.green
-	background-color: $green
-.lgreen
-	background-color: $lgreen
-.orange
-	background-color: $orange
-.lorange
-	background-color: $lorange
+.primary
+	background-color: $theme-primary
+.danger
+	background-color: $theme-danger
+.gray-darker
+	background-color: $gray-darker
+.gray-dark
+	background-color: $gray-dark
+.gray
+	background-color: $gray
+.gray-light
+	background-color: $gray-light
+.gray-lighter
+	background-color: $gray-lighter
 .white
 	background-color: $white
-.grey
-	background-color: $grey
-.lgrey
-	background-color: $lgrey
-.xlgrey
-	background-color: $xlgrey
 .black
 	background-color: $black
 
 
-//Social BackgroundColors
-.facebook
-	background-color: $facebook
-.twitter
-	background-color: $twitter
-.white
-	background-color: white
-.youtube
-	background-color: $youtube
-.instagram
-	background-color: $instagram
-.linkedin
-	background-color: $linkedin
-.whatsapp
-	background-color: $whatsapp
-.mail
-	background-color: $lblue
-
-
 // text colors
-.blue-text
-	color: $blue
-.lblue-text
-	color: $lblue
-.green-text
-	color: $green
-.lgreen-text
-	color: $lgreen
-.orange-text
-	color: $orange
-.lorange
-	color: $lorange
+.primary-text, .text-primary
+	color: $theme-primary
+.danger-text
+	color: $theme-danger
+.gray-darker-text
+	color: $gray-darker
+.gray-dark-text
+	color: $gray-dark
+.gray-text
+	color: $gray
+.gray-light-text, .text-muted
+	color: $gray-light
+.gray-lighter-text
+	color: $gray-lighter
 .white-text
 	color: $white
-.grey-text
-	color: $grey
-.lgrey-text
-	color: $lgrey
-.xlgrey-text
-	color: $xlgrey
 .black-text
 	color: $black
