@@ -17,17 +17,18 @@ body
     &.active
       color: darken($theme-primary, 20%)
   .navbar-collapse
-    border-color: fade-out(white, .02)
-    // ???????
+    border-color: rgba(white, .04)
   .navbar-toggle
-    background-color: $theme-primary
-    border-color: $theme-primary
+    background-color: $gray-dark
+    border-color: $gray
     font-family: $heading-font
     color: white
     font-size: 12px
     &:hover,
     &:focus
       background-color: $theme-primary
+    .icon-bar
+      background-color: white
   .nav
     li
       a
@@ -36,10 +37,14 @@ body
         letter-spacing: 1px
         color: white
         font-size: 14px
+        +transition(padding-left, .3s ease)
         &:hover,
         &:focus
+          padding-left: 30px
           color: $theme-primary
           outline: none
+          +bp-sm
+            padding-left: 15px
   .navbar-nav>.active>a
     border-radius: 0
     color: white
@@ -62,7 +67,7 @@ body
 // Navbar Change on Scroll
 +bp-sm
   .navbar-custom.affix
-    background-color: rgba($gray-darker, .75)
+    background-color: rgba($gray-darker, .85)
     padding: 10px 0
     .navbar-brand
       font-size: 1.5em
@@ -74,25 +79,34 @@ header
   text-align: center
   color: white
   height: 100%
+  position: relative
   .intro-text
-    padding-top: 100px
+    padding-top: 45%
     padding-bottom: 50px
     .intro-lead-in
       font-family: $serif-font
       font-style: italic
       font-size: 22px
-      line-height: 22px
+      line-height: 28px
       margin-bottom: 25px
     .intro-heading
       font-family: $heading-font
       font-weight: 700
-      font-size: 50px
+      font-size: 40px
       line-height: 50px
       margin-bottom: 25px
-+bp-sm
-  header
+  .social-media
+    //border: 1px solid red
+    position: absolute
+    bottom: 10%
+    width: 100%
+    .container
+      ul.social-butttons
+        @extend .social-buttons
+        float: right
+  +bp-sm
     .intro-text
-      padding-top: 300px
+      padding-top: 35%
       padding-bottom: 200px
       .intro-lead-in
         font-family: $serif-font
@@ -129,61 +143,17 @@ section
     padding: 150px 0
 
 // =============================================================================
-// Portfolio Section
+// Bureau Section
 // =============================================================================
-
-#portfolio
-  .portfolio-item
-    margin: 0 0 15px
-    right: 0
-    .portfolio-link
-      display: block
-      position: relative
-      max-width: 400px
-      margin: 0 auto
-      .portfolio-hover
-        background: fade-out($theme-primary, 0.9)
-        position: absolute
-        width: 100%
-        height: 100%
-        opacity: 0
-        +transition(all ease 0.5s)
-        &:hover
-          opacity: 1
-        .portfolio-hover-content
-          position: absolute
-          width: 100%
-          height: 20px
-          font-size: 20px
-          text-align: center
-          top: 50%
-          margin-top: -12px
-          color: white
-          i
-            margin-top: -12px
-          h3, h4
-            margin: 0
-    .portfolio-caption
-      max-width: 400px
-      margin: 0 auto
-      background-color: white
-      text-align: center
-      padding: 25px
-      h4
-        text-transform: none
-        margin: 0
-      p
-        @extend .serif-font
-        font-style: italic
-        font-size: 16px
-        margin: 0
-  *
-    z-index: 2
-+bp-sm
-  #portfolio
-    .portfolio-item
-      margin: 0 0 30px
-
+#bureau
+  img.profile
+    border: 7px solid $gray-lighter
+    width: 70%
+    +transition(all .3s ease)
+  ul.social-butttons
+    @extend .social-buttons
+  .timeline
+    margin-top: 60px
 
 // =============================================================================
 // Timeline
@@ -238,6 +208,9 @@ section
       border-radius: 100%
       border: 7px solid #f1f1f1
       text-align: center
+      +transition(all .3s ease)
+      &:hover
+        border-color: $theme-primary
       h4
         font-size: 10px
         margin-top: 12px
@@ -323,29 +296,103 @@ section
       &.timeline-inverted > .timeline-panel
         padding: 0 100px 20px 20px
 
-// =============================================================================
-// Team Section
-// =============================================================================
-.team-member
-  text-align: center
-  margin-bottom: 50px
-  img
-    margin: 0 auto
-    border: 7px solid white
-  h4
-    margin-top: 25px
-    margin-bottom: 0
-    text-transform: none
-  p
-    margin-top: 0
-
 
 // =============================================================================
-// Clients Aside
+// Service
+// =============================================================================
+#services
+  span
+    +transition(all .3s ease-in-out)
+    &:hover
+      +scale(1.1)
+
+// =============================================================================
+// Clients Aside -Slider
 // =============================================================================
 aside.clients
   img
     margin: 50px auto
+
+
+// =============================================================================
+// Portfolio Section
+// =============================================================================
+#proyects
+  .portfolio-item
+    margin: 0 0 15px
+    right: 0
+    .portfolio-link
+      display: block
+      position: relative
+      max-width: 400px
+      margin: 0 auto
+      .portfolio-hover
+        background: fade-out($theme-primary, 0.9)
+        position: absolute
+        width: 100%
+        height: 100%
+        opacity: 0
+        +transition(all ease 0.5s)
+        &:hover
+          opacity: 1
+        .portfolio-hover-content
+          position: absolute
+          width: 100%
+          height: 20px
+          font-size: 20px
+          text-align: center
+          top: 50%
+          margin-top: -12px
+          color: white
+          i
+            margin-top: -12px
+          h3, h4
+            margin: 0
+    .portfolio-caption
+      max-width: 400px
+      margin: 0 auto
+      background-color: white
+      text-align: center
+      padding: 25px
+      h4
+        text-transform: none
+        margin: 0
+      p
+        @extend .serif-font
+        font-style: italic
+        font-size: 16px
+        margin: 0
+  *
+    z-index: 2
++bp-sm
+  #portfolio
+    .portfolio-item
+      margin: 0 0 30px
+
+// =============================================================================
+// 3DVisualizations-Slider
+// =============================================================================
+
+section#visualizations
+  .container
+    padding: 0 15%
+    .bx-wrapper
+      margin-bottom: 0
+      border: none
+      +box-shadow(0px 0px 10px $gray-light)
+    #bx-pager
+      font-size: 0
+      a
+        display: inline-block
+        width: 20%
+        +box-shadow(0px 0px 3px $gray-light)
+        img
+          opacity: 0.5
+          +transition(all .3s ease)
+        &.active
+          img
+            opacity: 1
+
 
 // =============================================================================
 // Contact Section
@@ -369,21 +416,21 @@ section#contact
     border-color: $theme-primary
     box-shadow: none
   ::-webkit-input-placeholder
-    @extend .heading-font
+    font-family: $heading-font
     font-weight: 700
     color: $gray-lighter
   :-moz-placeholder
     /* Firefox 18- */
-    @extend .heading-font
+    font-family: $heading-font
     font-weight: 700
     color: $gray-lighter
   ::-moz-placeholder
     /* Firefox 19+ */
-    @extend .heading-font
+    font-family: $heading-font
     font-weight: 700
     color: $gray-lighter
   :-ms-input-placeholder
-    @extend .heading-font
+    font-family: $heading-font
     font-weight: 700
     color: $gray-lighter
   .text-danger
@@ -397,13 +444,101 @@ footer
   text-align: center
   span.copyright
     line-height: 40px
-    @extend .heading-font
+    font-family: $heading-font
     text-transform: none
   ul.quicklinks
     margin-bottom: 0
     line-height: 40px
-    @extend .heading-font
+    font-family: $heading-font
     text-transform: none
+    font-size: 14px
+
+
+//Selections - Highlight Color Customization
+::-moz-selection
+  text-shadow: none
+  background: $theme-primary
+
+::selection
+  text-shadow: none
+  background: $theme-primary
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+
+
+// =============================================================================
+// Portfolio Modal
+// =============================================================================
+.portfolio-modal
+  .modal-dialog
+    margin: 0
+    height: 100%
+    width: auto
+  .modal-content
+    border-radius: 0
+    background-clip: border-box
+    -webkit-box-shadow: none
+    box-shadow: none
+    border: none
+    min-height: 100%
+    padding: 100px 0
+    text-align: center
+    h2
+      margin-bottom: 15px
+      font-size: 3em
+    p
+      margin-bottom: 30px
+    p.item-intro
+      margin: 20px 0 30px
+      font-family: $serif-font
+      font-style: italic
+      font-size: 16px
+    ul.list-inline
+      margin-bottom: 30px
+      margin-top: 0
+    img
+      margin-bottom: 30px
+  .close-modal
+    position: absolute
+    width: 75px
+    height: 75px
+    background-color: transparent
+    top: 25px
+    right: 25px
+    cursor: pointer
+    &:hover
+      opacity: 0.3
+    .lr
+      height: 75px
+      width: 1px
+      margin-left: 35px
+      background-color: $gray-darker
+      transform: rotate(45deg)
+      -ms-transform: rotate(45deg)
+      /* IE 9 */
+      -webkit-transform: rotate(45deg)
+      /* Safari and Chrome */
+      z-index: 1051
+      .rl
+        height: 75px
+        width: 1px
+        background-color: $gray-darker
+        transform: rotate(90deg)
+        -ms-transform: rotate(90deg)
+        /* IE 9 */
+        -webkit-transform: rotate(90deg)
+        /* Safari and Chrome */
+        z-index: 1052
+  .modal-backdrop
+    opacity: 0
+    display: none
+
+
 
 
 //small devices => 480px

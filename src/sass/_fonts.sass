@@ -76,27 +76,45 @@ a.active
 	color: darken($theme-primary, 10%)
 
 
-.img-centered
-  margin: 0 auto
-.bg-light-gray
-  background-color: $gray-lighter
-.bg-darkest-gray
-  background-color: $gray-darker
-
 // Restyled Primary Buttons
 .btn-primary
-  button-variant(white, $theme-primary, $theme-primary)
-  @extend .heading-font
+  +button-variant(white, $theme-primary, $theme-primary)
+  font-family: $heading-font
   font-weight: 700
 .btn-xl
-  button-variant(white, $theme-primary, $theme-primary)
-  @extend .heading-font
+  +button-variant(white, $theme-primary, $theme-primary)
+  font-family: $heading-font
   font-weight: 700
   border-radius: 3px
   font-size: 18px
   padding: 20px 40px
 
+//Social-Buttons
+.social-buttons
+  margin-bottom: 0
+  li
+    margin-left: 10px
+    a
+      display: block
+      background-color: $gray-darker
+      height: 40px
+      width: 40px
+      border-radius: 50%
+      font-size: 20px
+      line-height: 37px
+      color: white
+      outline: none
+      +transition(all .3s ease)
+      &:hover,
+      &:focus,
+      &:active
+        background-color: $theme-primary
 
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus
+    outline: none
 
 //small devices => 480px
 +bp-xs
