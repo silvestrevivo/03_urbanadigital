@@ -31,10 +31,30 @@
 })(jQuery); // End of use strict
 
 
-
 $(document).ready(function(){
-  $('.bxslider').bxSlider({
+  $('.bxslider1').bxSlider({
     adaptiveHeight: true,
     pagerCustom: '#bx-pager'
+  });
+  $('.bxslider2').bxSlider({
+    minSlides: 4,
+    maxSlides: 4,
+    slideWidth: 300,
+    slideMargin: 10,
+    ticker: true,
+    speed: 12000
+  });
+});
+
+
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      //$(this).removeClass('hide');
+      $(this).addClass("slide");
+    }
   });
 });
