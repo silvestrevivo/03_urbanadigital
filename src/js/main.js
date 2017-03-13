@@ -44,6 +44,9 @@ $(document).ready(function(){
     ticker: true,
     speed: 12000
   });
+  $('.portfolio-link-last').click(function(e){
+    e.preventDefault();
+  });
 });
 
 
