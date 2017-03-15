@@ -218,14 +218,16 @@ aside.clients .bx-wrapper img{margin:50px auto}
 #photography .portfolio-item .portfolio-caption,#projects .portfolio-item .portfolio-caption{max-width:400px;margin:0 auto;background-color:#fff;text-align:center;padding:25px}
 #photography .portfolio-item .portfolio-caption h4,#projects .portfolio-item .portfolio-caption h4{text-transform:none;margin:0}
 #photography .portfolio-item .portfolio-caption p,#projects .portfolio-item .portfolio-caption p{font-size:16px;margin:0}
-footer span.copyright,footer ul.quicklinks{line-height:40px;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:none}
 #photography *,#projects *{z-index:2}
 @media (min-width:768px){#portfolio .portfolio-item{margin:0 0 30px}
 }
 section#visualizations .container{padding:0 11%}
 section#visualizations .container .bx-wrapper{margin-bottom:0;border:none;-webkit-box-shadow:0 0 10px #777;box-shadow:0 0 10px #777}
+section#visualizations .container .bx-wrapper .bx-controls-direction a{text-indent:0;font-size:30px;line-height:12px;border:1px solid rgba(255,255,255,.75);border-radius:50%;padding:7px;color:rgba(255,255,255,.75);-webkit-transition:background-color .3s ease;transition:background-color .3s ease}
+footer span.copyright,footer ul.quicklinks{line-height:40px;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:none}
+section#visualizations .container .bx-wrapper .bx-controls-direction a:hover{background-color:rgba(255,255,255,.4)}
 section#visualizations .container #bx-pager{font-size:0}
-section#visualizations .container #bx-pager a{display:inline-block;width:20%;-webkit-box-shadow:0 0 3px #777;box-shadow:0 0 3px #777}
+section#visualizations .container #bx-pager a{display:inline-block;width:12.5%;-webkit-box-shadow:0 0 3px #777;box-shadow:0 0 3px #777}
 section#visualizations .container #bx-pager a img{opacity:.5;-webkit-transition:all .3s ease;transition:all .3s ease}
 section#visualizations .container #bx-pager a.active img{opacity:1}
 section#contact{background-color:#222;background-image:url(../img/map-image.png);background-position:center;background-repeat:no-repeat;-moz-placeholder-font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;-moz-placeholder-font-weight:700;-moz-placeholder-color:#eee;-ms-input-placeholder-font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;-ms-input-placeholder-font-weight:700;-ms-input-placeholder-color:#eee}

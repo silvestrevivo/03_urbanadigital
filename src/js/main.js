@@ -34,6 +34,8 @@
 $(document).ready(function(){
   $('.bxslider1').bxSlider({
     adaptiveHeight: true,
+    nextText: '>',
+    prevText: '<',
     pagerCustom: '#bx-pager'
   });
   $('.bxslider2').bxSlider({
