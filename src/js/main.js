@@ -30,8 +30,8 @@
 
 })(jQuery); // End of use strict
 
-
 $(document).ready(function(){
+  //Slider
   $('.bxslider1').bxSlider({
     adaptiveHeight: true,
     nextText: '>',
@@ -49,9 +49,31 @@ $(document).ready(function(){
   $('.portfolio-link-last').click(function(e){
     e.preventDefault();
   });
+
+
+  //AJAX Requests
+  $('.portfolio-link').click(function(){
+    var a = $(this);
+    $.ajax({
+      url: 'dist/img/portfolio/projects.json',
+      method: 'GET',
+      dataType: 'json',
+    }).then(function(response) {
+      var identification = a.data('id');
+      $.each(response,function(key){
+        var modal = $('#portfolioModal');
+        if(identification === response[key]['id']){
+          modal.find('h2').text(response[key]['title']);
+          modal.find('.item-intro').text(response[key]['subtitle']);
+          modal.find('.img-responsive').attr('src', response[key]['image']);
+          modal.find('.description-project').text(response[key]['body']);
+        }
+      });
+    });
+  });
 });
 
-
+//BounceInUp animation
 $(window).scroll(function() {
   $(".slideanim").each(function(){
     var pos = $(this).offset().top;

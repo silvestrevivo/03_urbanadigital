@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "Bioclimatical housings",
+    "subtitle": "Castilleja de Guzmán - Seville 2005-08",
+    "image": "dist/img/portfolio/project01/cover01.jpg",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "id": 2,
+    "title": "3R house",
+    "subtitle": "Alcalá de Guadaíra - Seville 2005-12",
+    "image": "dist/img/portfolio/project02/cover02.jpg",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "id": 3,
+    "title": "41 detached housings",
+    "subtitle": "Benamejí - Cordoba 2007",
+    "image": "dist/img/portfolio/project03/cover03.jpg",
+    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+  {
+    "id": 4,
+    "title": "High School",
+    "subtitle": "Tomares - Seville 2007-11",
+    "image": "dist/img/portfolio/project04/cover04.jpg",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "id": 5,
+    "title": "Gym",
+    "subtitle": "Tomares - Seville 2007-11",
+    "image": "dist/img/portfolio/project05/cover05.jpg",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "id": 6,
+    "title": "High School",
+    "subtitle": "Seville 2010",
+    "image": "dist/img/portfolio/project06/cover06.jpg",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "id": 7,
+    "title": "Gas station",
+    "subtitle": "Seville 2009-11",
+    "image": "dist/img/portfolio/project07/cover07.jpg",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "id": 8,
+    "title": "Religious building",
+    "subtitle": "Bormujos - Seville 2010-12",
+    "image": "dist/img/portfolio/project08/cover08.jpg",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "id": 9,
+    "title": "Bormujos - Seville 2010-12",
+    "subtitle": "Seville 2011-12",
+    "image": "dist/img/portfolio/project09/cover09.jpg",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "id": 10,
+    "title": "Retirement house",
+    "subtitle": "Avila 2011-12",
+    "image": "dist/img/portfolio/project10/cover10.jpg",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "id": 11,
+    "title": "Passive House",
+    "subtitle": "Ireland 2013-14",
+    "image": "dist/img/portfolio/project11/cover11.jpg",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  }
+]
