@@ -55,7 +55,7 @@ $(document).ready(function(){
   $('.portfolio-link').click(function(){
     var a = $(this);
     $.ajax({
-      url: 'dist/img/portfolio/projects.json',
+      url: '/dist/img/portfolio/projects.json',
       method: 'GET',
       dataType: 'json',
     }).then(function(response) {
