@@ -65,45 +65,31 @@
 
 
 $(document).ready(function(){
-  //Portfolio
+  //function request
+  function ajaxRequest(element, urls){
+    $.ajax({
+        url: urls,
+        method: 'GET',
+        dataType: 'json',
+      }).then(function(response) {
+        var identification = element.data('id');
+        $.each(response,function(key){
+          var modal = $('#portfolioModal');
+          if(identification === response[key]['id']){
+            modal.find('h2').text(response[key]['title']);
+            modal.find('.item-intro').text(response[key]['subtitle']);
+            modal.find('.img-responsive').attr('src', response[key]['image']);
+            modal.find('.description-project').text(response[key]['body']);
+          }
+        });
+      });
+    }
   $('.portfolio-link1').click(function(){
-    var a = $(this);
-    $.ajax({
-      url: '/dist/img/portfolio/projects.json',
-      method: 'GET',
-      dataType: 'json',
-    }).then(function(response) {
-      var identification = a.data('id');
-      $.each(response,function(key){
-        var modal = $('#portfolioModal');
-        if(identification === response[key]['id']){
-          modal.find('h2').text(response[key]['title']);
-          modal.find('.item-intro').text(response[key]['subtitle']);
-          modal.find('.img-responsive').attr('src', response[key]['image']);
-          modal.find('.description-project').text(response[key]['body']);
-        }
-      });
-    });
+    var $a = $(this);
+    ajaxRequest($a, '/dist/img/portfolio/projects.json');
   });
-  //Photography
   $('.portfolio-link2').click(function(){
-    var a = $(this);
-    $.ajax({
-      url: '/dist/img/photography/fotos.json',
-      method: 'GET',
-      dataType: 'json',
-    }).then(function(response) {
-      var identification = a.data('id');
-      $.each(response,function(key){
-        var modal = $('#portfolioModal');
-        if(identification === response[key]['id']){
-          modal.find('h2').text(response[key]['title']);
-          modal.find('.item-intro').text(response[key]['subtitle']);
-          modal.find('.img-responsive').attr('src', response[key]['image']);
-          modal.find('.description-project').text(response[key]['body']);
-        }
-      });
-    });
+    var $a = $(this);
+    ajaxRequest($a, '/dist/img/photography/fotos.json');
   });
-
 });
